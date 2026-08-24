@@ -1,27 +1,29 @@
-import os
+import json
 import requests
 
-CLIENT_ID = os.environ["ORCID_CLIENT_ID"]
-CLIENT_SECRET = os.environ["ORCID_CLIENT_SECRET"]
+ORCID_ID = "0009-0008-4893-8029"
 
-response = requests.post(
-    "https://orcid.org/oauth/token",
+url = f"https://pub.orcid.org/v3.0/{ORCID_ID}/works"
+
+response = requests.get(
+    url,
     headers={
-        "Accept": "application/json",
-        "Content-Type": "application/x-www-form-urlencoded",
-    },
-    data={
-        "client_id": CLIENT_ID,
-        "client_secret": CLIENT_SECRET,
-        "grant_type": "client_credentials",
-        "scope": "/read-public",
-    },
+        "Accept": "application/json"
+    }
 )
 
 print("HTTP status:", response.status_code)
-print("ORCID response:", response.text)
 
-if response.ok:
-    print("SUCCESS: ORCID accepted the credentials.")
-else:
-    print("FAILED: ORCID rejected the credentials.")
+if not response.ok:
+    print("ORCID response:")
+    print(response.text)
+    response.raise_for_status()
+
+works = response.json()
+
+with open("publications.json", "w", encoding="utf-8") as f:
+    json.dump(works, f, indent=2, ensure_ascii=False)
+
+groups = works.get("group", [])
+
+print(f"Successfully retrieved {len(groups)} publication groups.")
