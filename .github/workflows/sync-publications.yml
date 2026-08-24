@@ -26,12 +26,12 @@ jobs:
 
       - name: Test which script is running
         run: |
-        pwd
-        ls -la
-        echo "----- fetch_publications.py -----"
-        cat fetch_publications.py
-        echo "----- running script -----"
-        python fetch_publications.py
+          pwd
+          ls -la
+          echo "----- fetch_publications.py -----"
+          cat fetch_publications.py
+          echo "----- running script -----"
+          python fetch_publications.py
 
       - name: Commit publication data
         run: |
