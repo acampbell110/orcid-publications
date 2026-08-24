@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Install dependencies
+      - name: Install requests
         run: pip install requests
 
       - name: Fetch ORCID publications
@@ -30,10 +30,16 @@ jobs:
           ORCID_CLIENT_SECRET: ${{ secrets.ORCID_CLIENT_SECRET }}
         run: python fetch_publications.py
 
-      - name: Commit updated publications
+      - name: Commit publication data
         run: |
           git config user.name "ORCID Publication Bot"
           git config user.email "actions@github.com"
+
           git add publications.json
-          git diff --cached --quiet || git commit -m "Update ORCID publications"
-          git push
+
+          if git diff --cached --quiet; then
+            echo "No changes to publications."
+          else
+            git commit -m "Update ORCID publications"
+            git push
+          fi
