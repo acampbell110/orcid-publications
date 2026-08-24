@@ -1,0 +1,448 @@
+{
+  "last-modified-date": {
+    "value": 1787606652147
+  },
+  "group": [
+    {
+      "last-modified-date": {
+        "value": 1787606533668
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1086/742982",
+            "external-id-normalized": {
+              "value": "10.1086/742982",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1086/742982"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 224740363,
+          "created-date": {
+            "value": 1787606533668
+          },
+          "last-modified-date": {
+            "value": 1787606533668
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0009-0008-4893-8029",
+              "path": "0009-0008-4893-8029",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Ali Campbell"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Demographic consequences of partner diversity and turnover in a multispecies ant-plant mutualism"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1086/742982",
+                "external-id-normalized": {
+                  "value": "10.1086/742982",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1086/742982"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "0003-0147",
+                "external-id-normalized": {
+                  "value": "0003-0147",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/0003-0147"
+                },
+                "external-id-relationship": "part-of"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1537-5323",
+                "external-id-normalized": {
+                  "value": "1537-5323",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1537-5323"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1086/742982"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2026"
+            },
+            "month": {
+              "value": "07"
+            },
+            "day": {
+              "value": "07"
+            }
+          },
+          "journal-title": {
+            "value": "The American Naturalist"
+          },
+          "visibility": "public",
+          "path": "/0009-0008-4893-8029/work/224740363",
+          "display-index": "0"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1787606575311
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1111/ele.70283",
+            "external-id-normalized": {
+              "value": "10.1111/ele.70283",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1111/ele.70283"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 224740381,
+          "created-date": {
+            "value": 1787606575311
+          },
+          "last-modified-date": {
+            "value": 1787606575311
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0009-0008-4893-8029",
+              "path": "0009-0008-4893-8029",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Ali Campbell"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Linking Climate and Demography to Predict Population Dynamics and Persistence Under Global Change"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1111/ele.70283",
+                "external-id-normalized": {
+                  "value": "10.1111/ele.70283",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1111/ele.70283"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1461-023X",
+                "external-id-normalized": {
+                  "value": "1461-023X",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1461-023X"
+                },
+                "external-id-relationship": "part-of"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1461-0248",
+                "external-id-normalized": {
+                  "value": "1461-0248",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1461-0248"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1111/ele.70283"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2025"
+            },
+            "month": {
+              "value": "12"
+            },
+            "day": null
+          },
+          "journal-title": {
+            "value": "Ecology Letters"
+          },
+          "visibility": "public",
+          "path": "/0009-0008-4893-8029/work/224740381",
+          "display-index": "0"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1787606596782
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1371/journal.pcbi.1013157",
+            "external-id-normalized": {
+              "value": "10.1371/journal.pcbi.1013157",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1371/journal.pcbi.1013157"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 224740396,
+          "created-date": {
+            "value": 1787606596782
+          },
+          "last-modified-date": {
+            "value": 1787606596782
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0009-0008-4893-8029",
+              "path": "0009-0008-4893-8029",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Ali Campbell"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Predicting potential recovery of the endangered bromeliad Tillandsia utriculata: An agent-based modeling approach"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1371/journal.pcbi.1013157",
+                "external-id-normalized": {
+                  "value": "10.1371/journal.pcbi.1013157",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1371/journal.pcbi.1013157"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1553-7358",
+                "external-id-normalized": {
+                  "value": "1553-7358",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1553-7358"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1371/journal.pcbi.1013157"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2025"
+            },
+            "month": {
+              "value": "06"
+            },
+            "day": {
+              "value": "10"
+            }
+          },
+          "journal-title": {
+            "value": "PLOS Computational Biology"
+          },
+          "visibility": "public",
+          "path": "/0009-0008-4893-8029/work/224740396",
+          "display-index": "0"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1787606652147
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.30707/spora6.1/zuai3621",
+            "external-id-normalized": {
+              "value": "10.30707/spora6.1/zuai3621",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.30707/spora6.1/zuai3621"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 224740424,
+          "created-date": {
+            "value": 1787606652147
+          },
+          "last-modified-date": {
+            "value": 1787606652147
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0009-0008-4893-8029",
+              "path": "0009-0008-4893-8029",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Ali Campbell"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "A Demographic Model of an Endangered Florida Native Bromeliad (Tillandsia utriculata)"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.30707/spora6.1/zuai3621",
+                "external-id-normalized": {
+                  "value": "10.30707/spora6.1/zuai3621",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.30707/spora6.1/zuai3621"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "2473-5493",
+                "external-id-normalized": {
+                  "value": "2473-5493",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/2473-5493"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.30707/spora6.1/zuai3621"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2020"
+            },
+            "month": null,
+            "day": null
+          },
+          "journal-title": {
+            "value": "SPORA: A Journal of Biomathematics"
+          },
+          "visibility": "public",
+          "path": "/0009-0008-4893-8029/work/224740424",
+          "display-index": "0"
+        }
+      ]
+    }
+  ],
+  "path": "/0009-0008-4893-8029/works"
+}
