@@ -1,10 +1,12 @@
 name: Sync ORCID Publications
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
   schedule:
     - cron: "0 6 * * 1"
-
 permissions:
   contents: write
 
