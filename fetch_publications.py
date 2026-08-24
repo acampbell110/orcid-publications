@@ -1,6 +1,10 @@
 import json
 import requests
 
+
+print("THIS IS THE NEW FETCH_PUBLICATIONS.PY")
+print("If you see this message, GitHub is running the correct file.")
+
 ORCID_ID = "0009-0008-4893-8029"
 
 url = f"https://pub.orcid.org/v3.0/{ORCID_ID}/works"
