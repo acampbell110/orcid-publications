@@ -1,12 +1,10 @@
 name: Sync ORCID Publications
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
   schedule:
     - cron: "0 6 * * 1"
+
 permissions:
   contents: write
 
@@ -29,18 +27,31 @@ jobs:
         run: pip install requests
 
       - name: Fetch ORCID publications
-        env:
-          ORCID_CLIENT_ID: ${{ secrets.ORCID_CLIENT_ID }}
-          ORCID_CLIENT_SECRET: ${{ secrets.ORCID_CLIENT_SECRET }}
         run: python fetch_publications.py
 
       - name: Update publications.json
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh api \
-            --method PUT \
+          CONTENT=$(base64 -w 0 publications.json)
+
+          SHA=$(gh api \
             "/repos/${{ github.repository }}/contents/publications.json" \
-            -f message="Update ORCID publications" \
-            -f content="$(base64 -w 0 publications.json)" \
-            -f branch="main"
+            --jq '.sha' 2>/dev/null || true)
+
+          if [ -n "$SHA" ]; then
+            gh api \
+              --method PUT \
+              "/repos/${{ github.repository }}/contents/publications.json" \
+              -f message="Update ORCID publications" \
+              -f content="$CONTENT" \
+              -f sha="$SHA" \
+              -f branch="main"
+          else
+            gh api \
+              --method PUT \
+              "/repos/${{ github.repository }}/contents/publications.json" \
+              -f message="Add ORCID publications" \
+              -f content="$CONTENT" \
+              -f branch="main"
+          fi
