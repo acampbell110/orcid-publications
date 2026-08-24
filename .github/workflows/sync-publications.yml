@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -24,14 +26,11 @@ jobs:
       - name: Install requests
         run: pip install requests
 
-      - name: Test which script is running
-        run: |
-          pwd
-          ls -la
-          echo "----- fetch_publications.py -----"
-          cat fetch_publications.py
-          echo "----- running script -----"
-          python fetch_publications.py
+      - name: Fetch ORCID publications
+        env:
+          ORCID_CLIENT_ID: ${{ secrets.ORCID_CLIENT_ID }}
+          ORCID_CLIENT_SECRET: ${{ secrets.ORCID_CLIENT_SECRET }}
+        run: python fetch_publications.py
 
       - name: Commit publication data
         run: |
@@ -44,5 +43,6 @@ jobs:
             echo "No changes to publications."
           else
             git commit -m "Update ORCID publications"
-            git push
+            git pull --rebase origin main
+            git push origin main
           fi
